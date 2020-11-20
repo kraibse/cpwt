@@ -1,0 +1,27 @@
+
+
+.Holder {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 60%;
+}
+
+.Search {
+    width: 300px;
+}
+
+.Sbutton {
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 60%;
+}
+
+.Element {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: -5%;
+    padding: 2.5%;
+    border-radius: 25px;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, .2);
+}
