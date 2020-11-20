@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Example 0</title>
+    </head>
+
+    <!-- content -->
+    <body>
+        <h1 id="heading">Heading</h1>
+        <p>Paragraph <span>0</span></p>
+        <p class="paragraph">Got contents by class</p>
+        <p name="final">Final block of text.</p>
+
+        <button onclick="changeContent()">Click me</button>
+
+        <div id="container"></div>
+    </body>
+
+    <!-- JS code -->
+    <script>
+        var dom = document;
+
+        var heading = dom.getElementById("heading");
+
+        var final = dom.getElementsByName("final");
+        var paragraphs = dom.getElementsByTagName("p");
+        var paragraphWithClass = dom.getElementsByClassName("paragraph");
+
+        console.log(heading);               // h1 object
+        console.log(final);                 // array
+        console.log(paragraphs);            // array
+        console.log(paragraphWithClass);    // array
+
+        function changeContent()
+        {
+            heading.innerHTML = "Changed text";
+            heading.style.fontSize = 26;
+
+            var container = dom.getElementById("container");
+            var newElement = dom.createElement("p");           // p object
+
+            newElement.innerHTML = "This div will show generated content";
+            newElement.setAttribute("style", "color: Dodgerblue");
+            
+            container.appendChild(newElement);
+        }
+    </script>
+</html>
